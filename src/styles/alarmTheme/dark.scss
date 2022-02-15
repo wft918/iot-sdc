@@ -1,0 +1,108 @@
+.theme-dark {
+  .top-charts {
+    height:50px;
+    display: flex;
+    align-items: center;
+    color: #FFFFFF;
+    /deep/ .el-progress__text {
+      color: #FFFFFF!important;
+    }
+  }
+  /deep/ .el-table__fixed:before {
+    height: 0;
+  }
+ .alarm-total {
+   width:180px;
+   height:50px;
+   color:#FFF;
+   font-size:18px;
+   line-height:50px;
+   text-align:center;
+   border-radius:5px;
+   display: flex;
+   justify-content: space-evenly;
+   align-self: center;
+   background: url("~@/assets/img/alarmNumBg.png") no-repeat #1E3B6A 10% center/35px; 
+   .alarm-total-number {
+     font-size: 24px;
+   }
+ }
+ .alarm-table {
+   .el-table {
+     color: #FFFFFF;
+   }
+   /deep/ .el-table th.el-table__cell>.cell {
+   color: #dedede;
+   }
+   /deep/ .el-table, .el-table__expanded-cell {
+     background-color: #0E1224;
+   }
+   /deep/ .el-table th {
+     background-color: #08304A!important;
+   }
+   /deep/ .el-table tr {
+     background-color: #0E1224!important;  
+   }
+   /deep/ .el-table--enable-row-transition .el-table__body td, .alarm-table .cell{
+     background-color: #0E1224;
+   }
+   /deep/ .el-table__body .el-table__row.hover-row td {
+     background-color: #0c1b2f  !important;
+   }
+   /deep/ .el-table__fixed-right-patch {
+     background-color: #08304A;
+     border: none;
+   }
+ }
+ /deep/ .el-pagination__total {
+   color: #FFFFFF!important;
+ }
+ /deep/ .el-pagination__jump {
+   color: #FFFFFF;
+ }
+ .tool-box {
+   background-color: #1e3b6a;
+   border: none;
+ }
+ .level-chart {
+   width: 150px;
+   height: 30px;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   .level-progress {
+     width: 45px;
+     height: 30px;
+   }
+   .level-text {
+     height: 100%;
+     display: flex;
+     flex-direction: column;
+     justify-content: space-around;
+     align-items: center;
+     .text-number {
+       font-size: 14px;
+       font-weight: 700;
+     }
+     .text-name {
+       font-size: 16px;
+     }
+   }
+ }
+ .btn-img {
+   width:12px;
+   height:13px;
+ }
+ .box-card {
+   margin-top: 15px;
+   .box-header {
+     padding: 10px 0 10px 0;
+     margin-left: 0;
+     background-color: #eee;
+     font-size: 16px;
+     span {
+       margin-left: 5px;
+     }
+   }
+ }
+}
